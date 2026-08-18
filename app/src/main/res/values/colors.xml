@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <!-- Paleta Principal Corporativa BaseBoss -->
+    <color name="color_primario">#1E293B</color>         <!-- Slate Blue Oscuro -->
+    <color name="color_primario_variante">#0F172A</color>
+    <color name="color_secundario">#2563EB</color>       <!-- Azul Acción -->
+    <color name="color_secundario_variante">#1D4ED8</color>
+
+    <!-- Fondos y Superficies -->
+    <color name="color_fondo">#F8FAFC</color>
+    <color name="color_superficie">#FFFFFF</color>
+    <color name="color_borde">#E2E8F0</color>
+
+    <!-- Tipografía y Estados -->
+    <color name="texto_primario">#0F172A</color>
+    <color name="texto_secundario">#64748B</color>
+    <color name="texto_claro">#FFFFFF</color>
+
+    <!-- Estados de Facturación y Finanzas -->
+    <color name="estado_pagada">#16A34A</color>          <!-- Verde Éxito -->
+    <color name="estado_pendiente">#D97706</color>       <!-- Ámbar Alerta -->
+    <color name="estado_vencida">#DC2626</color>         <!-- Rojo Peligro -->
+    <color name="estado_borrador">#64748B</color>        <!-- Gris Neutro -->
+    <color name="estado_anulada">#475569</color>
 </resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/destino_dashboard"
+        android:icon="@android:drawable/ic_menu_today"
+        android:title="@string/titulo_dashboard" />
+    <item
+        android:id="@+id/destino_clientes"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="@string/titulo_clientes" />
+    <item
+        android:id="@+id/destino_facturas"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="@string/titulo_facturas" />
+    <item
+        android:id="@+id/destino_gastos"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="@string/titulo_gastos" />
+    <item
+        android:id="@+id/destino_configuracion"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/titulo_configuracion" />
+</menu>

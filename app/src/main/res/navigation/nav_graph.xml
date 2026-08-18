@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/destino_dashboard">
+
+    <!-- Destino Dashboard Principal -->
+    <fragment
+        android:id="@+id/destino_dashboard"
+        android:name="com.example.baseboss.ui.dashboard.DashboardFragment"
+        android:label="@string/titulo_dashboard" />
+
+    <!-- Destino Clientes -->
+    <fragment
+        android:id="@+id/destino_clientes"
+        android:name="com.example.baseboss.ui.clientes.ListaClientesFragment"
+        android:label="@string/titulo_clientes">
+        <action
+            android:id="@+id/accion_listaClientes_a_crearEditarCliente"
+            app:destination="@id/destino_crear_editar_cliente" />
+        <action
+            android:id="@+id/accion_listaClientes_a_detalleCliente"
+            app:destination="@id/destino_detalle_cliente" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destino_crear_editar_cliente"
+        android:name="com.example.baseboss.ui.clientes.CrearEditarClienteFragment"
+        android:label="Cliente">
+        <argument
+            android:name="clienteId"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destino_detalle_cliente"
+        android:name="com.example.baseboss.ui.clientes.DetalleClienteFragment"
+        android:label="Detalle Cliente">
+        <argument
+            android:name="clienteId"
+            android:defaultValue="0L"
+            app:argType="long" />
+        <action
+            android:id="@+id/accion_detalleCliente_a_crearEditarCliente"
+            app:destination="@id/destino_crear_editar_cliente" />
+    </fragment>
+
+    <!-- Destino Facturas -->
+    <fragment
+        android:id="@+id/destino_facturas"
+        android:name="com.example.baseboss.ui.facturas.ListaFacturasFragment"
+        android:label="@string/titulo_facturas">
+        <action
+            android:id="@+id/accion_listaFacturas_a_crearFactura"
+            app:destination="@id/destino_crear_factura" />
+        <action
+            android:id="@+id/accion_listaFacturas_a_detalleFactura"
+            app:destination="@id/destino_detalle_factura" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destino_crear_factura"
+        android:name="com.example.baseboss.ui.facturas.CrearFacturaFragment"
+        android:label="Nueva Factura">
+        <argument
+            android:name="facturaId"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destino_detalle_factura"
+        android:name="com.example.baseboss.ui.facturas.DetalleFacturaFragment"
+        android:label="Detalle Factura">
+        <argument
+            android:name="facturaId"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
+
+    <!-- Destino Gastos -->
+    <fragment
+        android:id="@+id/destino_gastos"
+        android:name="com.example.baseboss.ui.gastos.ListaGastosFragment"
+        android:label="@string/titulo_gastos">
+        <action
+            android:id="@+id/accion_listaGastos_a_crearEditarGasto"
+            app:destination="@id/destino_crear_editar_gasto" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destino_crear_editar_gasto"
+        android:name="com.example.baseboss.ui.gastos.CrearEditarGastoFragment"
+        android:label="Gasto">
+        <argument
+            android:name="gastoId"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
+
+    <!-- Destino Configuración -->
+    <fragment
+        android:id="@+id/destino_configuracion"
+        android:name="com.example.baseboss.ui.configuracion.ConfiguracionFragment"
+        android:label="@string/titulo_configuracion" />
+
+</navigation>

@@ -1,3 +1,34 @@
 <resources>
     <string name="app_name">BaseBoss</string>
+
+    <!-- Secciones Principales -->
+    <string name="titulo_dashboard">Dashboard</string>
+    <string name="titulo_clientes">Clientes</string>
+    <string name="titulo_facturas">Facturas</string>
+    <string name="titulo_gastos">Gastos</string>
+    <string name="titulo_configuracion">Configuración</string>
+
+    <!-- Acciones Generales -->
+    <string name="accion_guardar">Guardar</string>
+    <string name="accion_cancelar">Cancelar</string>
+    <string name="accion_eliminar">Eliminar</string>
+    <string name="accion_editar">Editar</string>
+    <string name="accion_buscar">Buscar…</string>
+    <string name="accion_confirmar">Confirmar</string>
+    <string name="accion_compartir">Compartir</string>
+    <string name="accion_generar_pdf">Generar PDF</string>
+
+    <!-- Estados de Factura -->
+    <string name="estado_borrador">Borrador</string>
+    <string name="estado_pendiente">Pendiente</string>
+    <string name="estado_pagada">Pagada</string>
+    <string name="estado_vencida">Vencida</string>
+    <string name="estado_anulada">Anulada</string>
+
+    <!-- Mensajes y Validaciones -->
+    <string name="error_campo_obligatorio">Este campo es obligatorio</string>
+    <string name="error_email_invalido">Introduce un correo electrónico válido</string>
+    <string name="error_precio_invalido">El importe debe ser mayor que cero</string>
+    <string name="error_sin_lineas">La factura debe contener al menos una línea</string>
+    <string name="confirmar_eliminacion">¿Estás seguro de que deseas eliminar este elemento? Esta acción no se puede deshacer.</string>
 </resources>
