@@ -59,7 +59,34 @@ El proyecto sigue una arquitectura **MVVM (Model-View-ViewModel)** robusta, modu
 * **Manipulación de Documentos:** `android.graphics.pdf.PdfDocument` y `FileProvider`.
 
 ---
+## ⚙️ Instalación y Requisitos
+Requisitos de entorno:
 
+* **Android Studio (Ladybug / Jellyfish o superior).**
+
+* **JDK 17.**
+
+* **Dispositivo o Emulador con Android 8.0 (API 26) o superior.**
+
+* **Pasos para ejecutar:**
+
+* **Clona este repositorio:**
+
+Bash
+git clone [https://github.com/tu-usuario/baseboss.git](https://github.com/tu-usuario/baseboss.git)
+Abre el proyecto en Android Studio.
+
+* **Deja que Gradle sincronice las dependencias (Sync Project with Gradle Files).**
+
+* **Pulsa en Run (Shift + F10) seleccionando un dispositivo o emulador.**
+
+## 🗺️ Roadmap / Próximas Funcionalidades
+[ ] Escaneo de tickets y facturas.
+
+[ ] Recordatorios y notificaciones de facturas próximas a vencer.
+
+[ ] Exportación de copias de seguridad en la nube (Google Drive / JSON).
+    
 ## 📂 Estructura del Proyecto
 
 ```text
@@ -107,7 +134,3 @@ com.example.baseboss/
 │   └── configuracion/
 │
 └── utilidades/
-    ├── ConversorFecha.java
-    ├── FormateadorMoneda.java
-    ├── Validador.java
-    └── GeneradorPdfFactura.java
